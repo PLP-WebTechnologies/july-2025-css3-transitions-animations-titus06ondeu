@@ -1,0 +1,27 @@
+/* Button hover effect */
+.button {
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+/* Keyframe animation */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-box {
+  animation: fadeInSlide 1s ease-out forwards;
+}
